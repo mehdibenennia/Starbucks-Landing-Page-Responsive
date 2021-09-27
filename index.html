@@ -10,7 +10,8 @@
 <body>
 <nav class="nav-bar">
     <a href=""><img src="./images/logo.png" alt=""></a>
-    <div class="tabs">
+    <div class="toggle" onclick="toggleMenu()"></div>
+    <div class="tabs navigation">
         <a href="" class="tab">Home</a>
         <a href="" class="tab">Menu</a>
         <a href="" class="tab">What's New</a>
@@ -25,7 +26,9 @@
         <a href="#" class="btn">Learn more</a>
     </div>
     <div class="img-box">
+        
         <img src="./images/img1.png" alt="Frappuccino Drink Chocolate" class="drink">
+        <div class="circle"></div>
     </div>
 </section>
 
@@ -55,5 +58,15 @@
     
 </ul>
 
+<script>
+    function toggleMenu(){
+        let menuToggle = document.querySelector('.toggle');
+        let navigation = document.querySelector('.navigation');
+        menuToggle.classList.toggle('active');
+        navigation.classList.toggle('active');
+
+        
+    }
+</script>
 </body>
 </html>
