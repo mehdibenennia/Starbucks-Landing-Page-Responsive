@@ -10,7 +10,7 @@
 <body>
 <nav class="nav-bar">
     <a href=""><img src="./images/logo.png" alt=""></a>
-    <div class="toggle" onclick="toggleMenu()"></div>
+    <div class="toggle" id="menu"></div>
     <div class="tabs navigation">
         <a href="" class="tab">Home</a>
         <a href="" class="tab">Menu</a>
@@ -26,25 +26,19 @@
         <a href="#" class="btn">Learn more</a>
     </div>
     <div class="img-box">
-        
-        <img src="./images/img1.png" alt="Frappuccino Drink Chocolate" class="drink">
+        <div class="drink container">
+            <img src="./images/img1.png" alt="Frappuccino Drink Chocolate" class="drink">
+            <img src="./images/img2.png" alt="Frappuccino Drink Chocolate" class="drink">
+            <img src="./images/img3.png" alt="Frappuccino Drink Chocolate" class="drink">
+        </div>
         <div class="circle"></div>
     </div>
 </section>
 
 <footer class="footer">
-    <img src="./images/thumb1.png" onClick=" document.querySelector('.drink').src='./images/img1.png'; 
-                                                        document.querySelector('.circle').style.background ='#017143'
-                                                        document.querySelector('span').style.color ='#017143'
-                                                        document.querySelector('.btn').style.background ='#017143'" >
-    <img src="./images/thumb2.png" onClick=" document.querySelector('.drink').src='./images/img2.png'; 
-                                                        document.querySelector('.circle').style.background ='#eb7495'
-                                                        document.querySelector('span').style.color ='#eb7495'
-                                                        document.querySelector('.btn').style.background ='#eb7495'" >
-    <img src="./images/thumb3.png" onClick=" document.querySelector('.drink').src='./images/img3.png'; 
-                                                        document.querySelector('.circle').style.background ='#d752b1'
-                                                        document.querySelector('span').style.color ='#d752b1'
-                                                        document.querySelector('.btn').style.background ='#d752b1'" >
+    <img src="./images/thumb1.png">
+    <img src="./images/thumb2.png">
+    <img src="./images/thumb3.png">
 </footer>
 
 <div class="circle">
@@ -58,15 +52,6 @@
     
 </ul>
 
-<script>
-    function toggleMenu(){
-        let menuToggle = document.querySelector('.toggle');
-        let navigation = document.querySelector('.navigation');
-        menuToggle.classList.toggle('active');
-        navigation.classList.toggle('active');
-
-        
-    }
-</script>
+<script src="./js/script.js"></script>
 </body>
 </html>
